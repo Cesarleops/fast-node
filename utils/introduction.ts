@@ -1,5 +1,13 @@
-
+import pc from "picocolors"
+import gradient from 'gradient-string'
 
 export const renderIntro = () => {
-    console.log("Welcome to this app, hopefully it will be cool by the end")
+    let duck = gradient('orange', 'yellow').multiline([
+        "____",
+        
+        "WELCOME",
+        "FAST NODE",
+        "____",
+    ].join('\n'));
+    console.log(duck);
 }
